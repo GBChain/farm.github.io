@@ -246,8 +246,8 @@
                     <div class="title1">信  息  生  活&nbsp;&nbsp;&nbsp;&nbsp;方  便  你  我</div>
                     <img class="main-img" src="./image/1024.png" alt="智慧淅川/">
                     <a class="btn" onclick="downloadStat()"><img src="./image/download@2x.png" alt="智慧淅川/"></a>
-                    <div class="footer">京ICP备17003517号-2 京公网安备123456789号 www.aixichuan.cn All Rights Reserved. 郑州仟博信息科技有限公司 版权所有</div>
-                    <div class="contact" onclick="downloadStat()">联系我们</div>
+                    <div class="footer">豫ICP备2021021569号 www.ebianmin.cn All Rights Reserved. 郑州仟博信息科技有限公司 版权所有</div>
+                    <div class="contact" onclick="contactOut()">联系我们</div>
                 </div>
             </div>
         </div>
@@ -275,6 +275,13 @@
             } else {
                 document.getElementById('mask').style.display = 'block'
             }
+        }
+        function contactOut() {
+          if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+              document.getElementById('mask').style.display = 'block'
+          } else {
+              document.getElementById('mask').style.display = 'block'
+          }
         }
         // 判断是否为ios端访问
         function _IsIOS () {
